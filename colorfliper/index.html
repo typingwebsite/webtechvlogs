@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <!-- color fliper create-->
+     <button  id="btn" onclick="meth()" >click</button>
+</body>
+<script>
+    let body=document.getElementById("body")
+    let colors=['red','black','green','yellow','pink','blue',]
+    let curentindex=0;
+   function meth(){
+    body.style.backgroundColor=colors[curentindex]
+    curentindex=(curentindex+1)%colors.length
+   }
+</script>
+</html>
